@@ -20,6 +20,7 @@ OUTPUT_FILENAME = 'report'
 PLATE = 'szzx;'
 # 公告类型：category_scgkfx_szsh（首次公开发行及上市）、category_ndbg_szsh（年度报告）、category_bndbg_szsh（半年度报告）
 CATEGORY = 'category_ndbg_szsh;'
+CATEGORY = 'category_bndbg_szsh;'
 
 URL = 'http://www.cninfo.com.cn/new/hisAnnouncement/query'
 HEADER = {
@@ -29,7 +30,7 @@ HEADER = {
 MAX_PAGESIZE = 50
 MAX_RELOAD_TIMES = 5
 RESPONSE_TIMEOUT = 10
-
+error_log = ""
 
 def standardize_dir(dir_str):
     assert (os.path.exists(dir_str)), 'Such directory \"' + str(dir_str) + '\" does not exists!'
